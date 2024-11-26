@@ -1,0 +1,25 @@
+body {
+    background-color: lightgray;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-button {
+    height: 80px;
+    width: 240px;
+    font-size: 24pt;
+}
+
+td {
+    padding-inline: 8px;
+}
+
+table,
+td {
+    background-color: azure;
+    border: solid black thin;
+}

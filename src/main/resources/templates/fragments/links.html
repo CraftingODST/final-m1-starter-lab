@@ -1,0 +1,27 @@
+<!-- src/main/resources/templates/fragments.html -->
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fragments</title>
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <!-- Define the fragment with a name 'links' -->
+    <div th:fragment="links" style="margin:auto" class="centered">
+        <form action="">
+            <button formaction="/events/list" class="nav-button">List Events</button>
+            <button formaction="/events/add" class="nav-button">Add Event</button>
+            <button formaction="/tickets/buy" class="nav-button">Buy Ticket</button>
+            <button formaction="/tickets/list" class="nav-button">List Tickets</button>
+        </form>
+    </div>
+</body>
+
+</html>

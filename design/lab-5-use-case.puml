@@ -1,0 +1,15 @@
+@startuml event
+
+left to right direction
+
+actor Organizer as organizer
+
+rectangle "Event Booking" {
+    usecase "Add Event" as add
+    usecase "List Events" as list
+}
+
+organizer --> add
+organizer --> list
+
+@enduml

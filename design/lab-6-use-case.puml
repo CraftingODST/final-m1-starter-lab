@@ -1,0 +1,23 @@
+@startuml event
+
+left to right direction
+
+:Agent: as Agent
+:Buyer: as Buyer
+
+rectangle "Event Bookings" {
+    (List Events) as events
+    (Add Event) as add
+    (Buy Tickets) as buy
+    (List Tickets) as tickets
+    ' (List By Event Type) as list_type
+}
+
+Agent --> events 
+Agent --> add 
+Buyer --> events 
+Buyer --> buy 
+Buyer --> tickets
+
+
+@enduml
